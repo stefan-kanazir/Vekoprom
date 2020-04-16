@@ -1,0 +1,980 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #f0f0f0;
+}
+
+.wrapper {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+
+.logo {
+    color: #000;
+    display: flex;
+    align-items: baseline;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.logo span{
+    margin-left: 5px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: rgb(104, 104, 104);
+}
+
+.nav-links li{
+    display: inline;
+    margin-left: 30px;
+}
+
+
+.nav-links a {
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 14px;
+    z-index: 10;
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #ff9900;
+}
+
+.jezik{
+    font-weight: bold;
+}
+
+.jezik:hover{
+    color: #D87E46;
+    border-bottom: none !important;
+}
+
+.srb::after{
+   content: " |";
+   color: #000;
+}
+
+.eng{
+    margin-left: 10px !important;
+}
+
+.burger {
+    display: none;
+}
+
+.burger:active .burger div{
+background-color: #ff9900;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin: 5px;
+}
+
+.kontakt-info {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+    color: #fff;
+    font-size: 15px;  
+}
+
+.kontakt-info a{
+    color: #fff;  
+}
+
+.kontakt-info a:hover{
+    color: #ddd;
+}
+
+
+
+.kontakt {
+    background: #3D3D3D;
+}
+
+.hero {
+    height: 700px;
+    background: url(../slike/vekoprom-main-banner.jpg) center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.3);
+    background-size: cover;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.hero p {
+    width: 50%;
+    line-height: 1.5em;
+}
+
+main a.cta {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+main a.cta:hover{
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+a.cta2{
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+main a.cta2:hover{
+    background: #fff;
+    color: #000;
+}
+
+.relative{
+    position: relative;
+    width: 1300px;
+    margin: auto;
+    top: 20%;
+}
+
+.text {
+    background: #E4E4E4;
+    padding: 5vh 0;
+    text-align: center;
+}
+
+.text p {
+    color: #000;
+    font-size: 22px;
+    width: 90%;
+    margin: auto;
+}
+
+.sticky{
+    width: 1300px;
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    background: #fff;
+    border-radius: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sticky img{
+    height: 70px;
+    margin-left: 30px;
+}
+
+.sticky img:first-child{
+    margin-left: 0px;
+}
+
+.sticky a{
+    color: #000;
+    font-weight: bold;
+    background: #ff9900;
+    padding: 8px 14px;
+    border-radius: 5px; 
+}
+
+.sticky p{
+    font-weight: bold;
+}
+
+.sticky a:hover{
+    background: #ffb342;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin: auto;
+    justify-content: space-between;
+    margin: 80px auto;
+}
+
+
+.services-cta{
+color: #000;
+font-weight: bold;
+background: #ff9900;
+position: relative;
+top: 20px;
+padding: 10px 20px;
+}
+
+.services-cta:hover{
+    background: #ffb342;
+}
+
+.vozac {
+    flex: 1;
+    height: 300px;
+    background: url(../slike/ftl-kompletni-utovar.jpg) center;
+    background-size: cover;
+    margin-right: 40px;
+}
+
+.usluge {
+    flex: 1;
+}
+
+.about-wrapper{
+    width: 1300px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.about {
+    padding: 80px 0 134px 0;
+    background: #1B263B;
+    color: #fff;
+    text-align: center;
+}
+
+.edgtf-lighter-effect-top {
+    margin-top: 80px;
+    display: block;
+    position: relative;
+    top: 2px;
+}
+
+.edgtf-lighter-effect-bottom {
+    transform: translateY(-26px);
+}
+
+.drive{
+    width: 40%;
+    line-height: 1.5em;
+}
+
+
+.ikonica {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 30px 0;
+    background: #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ikonica img {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about h3 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about h3:first-child {
+    font-size: 24px;
+    text-transform: uppercase;
+    max-width: max-content;
+    margin: 0px auto 30px auto;
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+}
+
+.zaposleni {
+    display: flex;
+    width: 1300px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.zaposleni img{
+    height: 60px;
+}
+
+.zaposleni-tekst {
+    display: flex;
+    align-items: baseline;
+}
+
+.office {
+    display: flex;
+    align-items: center;
+}
+
+.zaposleni-tekst span {
+    color: #1B263B;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.mission-wrapper {
+    width: 1300px;
+    margin: auto;
+}
+
+.mission {
+    background: url(../slike/misija-background.jpg) center fixed;
+    background-size: cover;
+    padding: 120px 0;
+    color: #fff;
+    box-shadow: inset 0px 0px 0px 2000px rgba(0, 0, 0, 0.4);
+}
+
+.mission h2 {
+    display: inline-block;
+    font-size: 35px;
+    border-bottom: 2px solid #ff9900;
+    margin-bottom: 30px;
+}
+
+.mission p {
+    width: 70%;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0 0 30px 0;
+    line-height: 1.5em;
+}
+
+.mission .mission-cta{
+    color: #000;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    background: #ff9900;
+    margin-top: 40px;
+    padding: 7px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mission-cta:hover{
+    background: #ffb342;
+}
+
+.vesti {
+    width: 1300px;
+    margin: 60px auto;
+}
+
+.vesti-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vesti h4{
+    position: relative;
+    left: 50%;
+    font-size: 30px;
+    margin: 0 auto 60px auto;
+    /* padding-bottom: 10px;
+    border-bottom: 2px solid; */
+    text-align: center;
+    display: inline-block;
+    transform: translateX(-50%);
+}
+
+.vesti-slika{
+    background: url(../slike/18.jpg) center;
+    background-size: cover;
+    height: 230px;
+    width: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+
+.vesti-slika-2{
+    background: url(../slike/17313.jpg) center;
+    background-size: cover;
+    height: 230px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.vesti-slika-3{
+    background: url(../slike/vanveenjf-mS2ngGq6VO4-unsplash.jpg) center;
+    background-size: cover;
+    height: 230px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.vesti-card{
+    margin-right: 5%;
+    flex: 1;
+}
+
+.vesti-naslov{
+    margin: 20px 0 20px 0;
+    font-size: 12px;
+    color: rgb(104, 104, 104);
+}
+
+.vesti-card:last-child{
+    margin-right: 0;
+}
+
+footer {
+    padding: 60px 0px 0px 0px;
+    background: #3D3D3D;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    clear: both;
+}
+
+.footer-wrapper {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #fff;
+}
+
+footer h4{
+    margin-bottom: 30px;
+}
+
+footer li{
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.footer-onama{
+    width: 33%;
+}
+
+.footer-onama p{
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.footer-kontakt li a{
+    color: #fff;
+}
+
+footer a:hover{
+    color: #ddd;
+}
+
+p.copy {
+    margin: 20px auto 0 auto;
+    font-weight: 300;
+    width: 90%;
+}
+
+.copyright {
+    padding: 20px 0 100px 0;
+}
+
+/* CONTACT PAGE */
+
+.kontakt-baner{
+    padding: 80px;
+    background: url(../slike/footer_background.jpg) center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+}
+
+.kontakt-main {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 0 60 0;
+    margin: 60px auto;
+}
+
+.card-contact {
+    flex-basis: 33%;
+}
+
+.card-contact h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.card-contact p {
+    line-height: 1.5em;
+}
+
+.card-contact a {
+    line-height: 1.5em;
+    color: #000;
+}
+.mapa{
+    height: 300px;
+}
+/* END OF CONTACT PAGE */
+
+/* ABOUT US PAGE */
+.onama-baner{
+    padding: 80px;
+    background: url(../slike/footer_background.jpg) center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+}
+.onama-main{
+    width: 1300px;
+    margin: auto;
+}
+
+.vekopromslika{
+    background: url(../slike/truck.jpg) center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+    margin-right: 60px;
+    flex: 2 1 auto;
+}
+
+.istorijat{
+    margin: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.istorijat p, .sertifikati p{
+    width: 60%;
+}
+
+.title-line{
+    margin-top: 60px;
+    font-size: 20px;
+    border-bottom: 1px solid #aaa;
+    font-weight: bold;
+    clear: both;
+}
+
+.sertifikati{
+    margin: 60px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sertifikati-slika{
+    background: url(../slike/kamioni-parking.jpg) center;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+    margin-left: 60px;
+    flex: 1;
+}
+/* END OF ABOUT US PAGE */
+
+/* USLUGE */
+.usluge-main{
+    width: 1300px;
+    margin: auto;
+    line-height: 1.5em;
+}
+
+.usluge-main h2{
+    color: #146eb4;
+}
+
+.usluge-naslov{
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+.onama-tekst{
+    margin: 40px 0;
+}
+
+.usluge-drumski{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drumski-slika{
+    height: 250px;
+    background: url(../slike/usluge-transporta.jpg) right;
+    background-size: cover;
+    width: 30%;
+    float: left;
+}
+
+.drumski-tekst{
+    width: 60%;
+    display: block;
+    float: right;
+}
+
+.drumski-tekst h3{
+    margin-bottom: 15px;
+}
+
+.drumski-tekst ul{
+    margin-top: 15px;
+}
+
+.utovar{
+    clear: both;
+    padding-top: 60px;
+}
+
+.utovar-slika{
+    background: url(../slike/three-white-enclosed-trailers.jpg) center;
+    height: 250px;
+    background-size: cover;
+    width: 30%;
+    float: right;
+}
+
+.utovar-tekst{
+    width: 60%;
+    display: block;
+    float: left;
+}
+
+.utovar-tekst h3{
+    margin-bottom: 15px;
+}
+
+.carine-slika{
+    height: 250px;
+    background: url(../slike/customs.jpg) center;
+    background-size: cover;
+    width: 30%;
+    float: right;
+}
+
+.skladiste-slika{
+    height: 250px;
+    background: url(../slike/skladistenje-robe.jpg) center;
+    background-size: cover;
+    width: 30%;
+    float: left;
+    margin-bottom: 60px;
+}
+/* END OF USLUGE */
+
+
+
+@media screen and (max-width: 1400px) {
+    .wrapper,  .kontakt-info, .relative, .services, .about-wrapper, .zaposleni, .mission-wrapper, .footer-wrapper, .kontakt-main, .vesti, .sticky, .onama-main, .usluge-main{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .usluge-card{
+        margin-top: 12vh;
+    }
+
+    .usluge-main{
+        text-align: center;
+    }
+
+    .drumski-slika, .drumski-tekst, .utovar-slika, .utovar-tekst, .carine-slika, .skladiste-slika {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+.nav-links li:first-child{
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .kontakt, .mission p:nth-of-type(2){
+        display: none;
+    }
+
+    .services, .about-wrapper, .zaposleni, .zaposleni-tekst, .office, .footer-wrapper {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    a.logo span{
+        display: none;
+    }
+
+    .relative{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        top: 15vh !important;
+        height: 70%;
+    }
+
+    .relative h2 span{
+        display: none;
+    }
+
+    main.hero{
+        height: 82vh;
+    }
+
+    .hero h2{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .sticky{
+        display: block;
+        text-align: center;
+        width: max-content;
+        padding: 10px 35px;
+    }
+
+    .sticky p{
+        display: none;
+    }
+
+    .sticky a{
+        background: transparent;
+    }
+
+    .sticky a:hover{
+        background: transparent;
+    }
+
+    .sticky-slike{
+        display: none;
+    }
+
+
+    .vozac {
+        width: 100%;
+        margin: 60px auto;
+    }
+
+    .drive {
+        margin: auto;
+        width: 100%;
+    }
+
+    .drive:last-child {
+        margin-top: 60px;
+    }
+
+    .ikonica {
+        height: 80px;
+        width: 80px;
+        border-radius: 40px;
+    }
+
+    .ikonica img {
+        width: 50px;
+    }
+
+    .office {
+        margin-bottom: 50px;
+    }
+
+    .office:last-child{
+        margin-bottom: 0;
+    }
+
+    .mission {
+        text-align: center;
+        margin: auto;
+    }
+
+    .mission p{
+        margin: 0 auto 60px auto;
+        width: 90%;
+    }
+
+    .vesti-wrapper{
+        display: block;
+    }
+
+    .vesti-card {
+        margin-bottom: 60px;
+        margin-right: 0;
+    }
+
+    .footer-wrapper{
+        text-align: left;
+    }
+
+    .footer-kontakt {
+        margin-bottom: 50px;
+    }
+
+    .footer-kontakt:last-child {
+        margin-bottom: 0;
+    }
+    
+    .footer-onama{
+        width: 100%;
+    }
+
+    .relative p {
+        display: none;
+    }
+
+    .relative {
+        top: 30%;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .kontakt-baner {
+        top: 60px;
+    }
+
+    .kontakt-main {
+        padding-top: 60px;
+        display: block;
+    }
+
+    .card-contact{
+        margin-bottom: 50px;
+    }
+
+    /* O NAMA STRANICA */
+    .onama-baner{
+        top: 60px;
+    }
+    .onama-main{
+        padding-top: 60px;
+    }
+    .istorijat, .sertifikati{
+        display: block;
+    }
+    .vekopromslika, .sertifikati-slika{
+        width: 100%;
+    }
+    .sertifikati-slika{
+        margin-left: 0;
+    }
+    .istorijat p, .sertifikati p{
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+    /* END OF O NAMA STRANICA */
+
+    .wrapper{
+        min-height: 60px;
+    }
+
+    .logo img{
+        height: 40px;
+    }
+
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        z-index: 99 !important;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        color: #000;
+        font-weight: 600;
+        width: 50%;
+        height: calc(100vh - 60px);
+        background: #f0f0f0;
+        display: flex;
+        transition: transform 0.5s ease-in;
+        transform: translateX(100%);
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    } 
+}
+
+
+ .nav-active {
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        transform: translateX(50px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
